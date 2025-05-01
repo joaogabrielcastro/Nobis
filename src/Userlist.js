@@ -17,7 +17,7 @@ function UserList() {
         setUsers(data);
       } catch (err) {
         setError(err.message);
-        console.error("Erro na requisição:", err);
+        console.error("Erro ao buscar usuários:", err);
       } finally {
         setIsLoading(false);
       }
@@ -26,16 +26,18 @@ function UserList() {
     fetchUsers();
   }, []);
 
+   // Filtra os usuários conforme o que for digitado na busca
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+    // Quando um usuário for clicado, mostra os detalhes dele
   const handleUserClick = (user) => {
     setSelectedUser(user);
   };
 
-  if (isLoading) return <div className="loading">Carregando usuários...</div>;
-  if (error) return <div className="error">Erro: {error}</div>;
+  if (isLoading) return <div className="loading">Carregando lista de usuários...</div>;
+  if (error) return <div className="error"> Erro! : {error}</div>;
 
   return (
     <div className="container">
@@ -55,7 +57,7 @@ function UserList() {
               <strong>Nome:</strong>{" "}
               <span 
                 className="user-name" 
-                onClick={() => handleUserClick(user)}
+                onClick={() => handleUserClick(user)} // Ao clicar, mostra detalhes
               >
                 {user.name}
               </span>
