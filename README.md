@@ -15,6 +15,11 @@ Este é um projeto simples feito com React que mostra uma lista de usuários vin
 - **CSS** simples pra deixar a interface mais bonita
 - API pública: [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
 
+ **Ferramentas**:
+  - Git
+  - GitHub
+  - npm
+
 ## ▶️ Como rodar o projeto
 
 Você precisa ter o **Node.js** instalado.
@@ -23,10 +28,10 @@ Depois, é só seguir esses passos no terminal:
 
 ```bash
 # Clonar o projeto
-git clone https://github.com/seu-usuario/userlist.git
+https://github.com/joaogabrielcastro/Nobis.git
 
 # Entrar na pasta
-cd nobis
+cd Nobis
 
 # Instalar as dependências
 npm install
