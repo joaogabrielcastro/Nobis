@@ -26,7 +26,7 @@ Depois, é só seguir esses passos no terminal:
 git clone https://github.com/seu-usuario/userlist.git
 
 # Entrar na pasta
-cd userlist
+cd nobis
 
 # Instalar as dependências
 npm install
